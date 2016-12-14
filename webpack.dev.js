@@ -3,9 +3,9 @@ var Webpack = require("webpack");
 var path = require("path");
 
 /** Paths **/
-var srcPath = path.resolve(__dirname, "src");
+var srcPath = path.resolve(__dirname, "app/src");
 var nodeModulesPath = path.resolve(__dirname, "node_modules");
-var buildPath = path.resolve(__dirname, "public", "assets/js");
+var buildPath = path.resolve(__dirname, "app", "assets/js/build");
 
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
@@ -24,7 +24,7 @@ var config = {
     output: {
         path: buildPath,
         filename: "[name].js",
-        publicPath: "/assets/js/"
+        publicPath: "assets/js/build/"
     },
 
     module: {
@@ -39,7 +39,7 @@ var config = {
             {
                 /** Compiles ES6 to ES5 **/
                 test: /\.js$/,
-                loader: "babel",
+                loader: "babel-loader",
                 query: {
                     plugins: [
                         "transform-runtime",
@@ -63,12 +63,12 @@ var config = {
             {
                 /** Support importing .html templates **/
                 test: /\.html$/,
-                loader: "html"
+                loader: "html-loader"
             },
             {
                 /** Compiles SASS and then Import the Compiled CSS **/
                 test: /\.scss$/,
-                loader: ["style", "css?modules&importLoaders=1&localIdentName", "postcss", "sass?sourceMap"]
+                loader: ["style-loader", "css-loader?modules&importLoaders=1&localIdentName", "postcss-loader", "sass-loader?sourceMap"]
             }
         ]
     },
