@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "description": "",
   "license": "MIT",
+  "main": "app/index.js",
   "repository": "jakejarrett/marionette-electron",
   "author": {
     "name": "Jake Jarrett",
@@ -15,11 +16,6 @@
     "start": "electron .",
     "build": "electron-packager . --out=dist --asar --overwrite --all"
   },
-  "files": [
-    "index.js",
-    "index.html",
-    "index.css"
-  ],
   "keywords": [
     "electron-app",
     "electron"
