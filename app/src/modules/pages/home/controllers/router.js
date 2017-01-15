@@ -1,5 +1,5 @@
 import Marionette, { AppRouter } from "marionette";
-import { attribute, controller, appRoute } from "marionette-decorators";
+import { controller, appRoute } from "marionette-decorators";
 import HomeRouterController from "./router-contoller";
 import App from "app/app";
 
@@ -11,12 +11,8 @@ import App from "app/app";
 @controller(new HomeRouterController)
 class HomeRouter extends AppRouter {
 
-    constructor (...args) {
-        super(args);
-    }
-
     /**
-     * When the (/) page route is hit, we want to run this
+     * When the (/) page route is hit, we will import the home view & then show it.
      *
      * @protected
      */

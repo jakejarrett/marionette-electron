@@ -26,4 +26,4 @@ Builds the app for macOS, Linux, and Windows, using [electron-packager](https://
 
 ## License
 
-MIT © [Vokke](http://vokke.com.au)
+MIT © Jake Jarrett

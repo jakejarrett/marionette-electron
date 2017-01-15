@@ -14,7 +14,9 @@
   "scripts": {
     "test": "xo",
     "start": "electron .",
-    "build": "electron-packager . --out=dist --asar --overwrite --all"
+    "build": "electron-packager . --out=dist --asar --overwrite --all",
+    "webpack:prod": "./node_modules/.bin/webpack -p --config ./webpack.prod.js",
+    "webpack:dev": "./node_modules/.bin/webpack -d --watch --config ./webpack.dev.js"
   },
   "keywords": [
     "electron-app",
@@ -22,6 +24,7 @@
   ],
   "dependencies": {
     "@jakejarrett/marionette-component": "^0.2.6",
+    "about-window": "^1.6.1",
     "babel-core": "^6.0.0",
     "babel-loader": "^6.0.0",
     "babel-plugin-syntax-decorators": "^6.13.0",
@@ -46,6 +49,7 @@
     "bootstrap": "^4.0.0-alpha.5",
     "css-loader": "^0.10.1",
     "cssnano": "^3.7.3",
+    "electron-config": "^0.2.1",
     "electron-debug": "^1.0.0",
     "express": "^4.12.3",
     "extract-text-webpack-plugin": "^2.0.0-beta.4",

@@ -32,13 +32,15 @@ export default Marionette.View.extend({
     template: false,
 
     /**
-     * Split up app into regions, navigation & content.
+     * Split up app into regions, So we can have different rendering methods for each.
      *
      * @protected
      */
     regions: {
-        navigation: "#navigation",
-        content: {
+    	sidebar: "#sidebar",
+		player: "#player",
+		topbar: "#topbar",
+        contentContainer: {
             regionClass: ContentRegion,
             el: "#app-main"
         }

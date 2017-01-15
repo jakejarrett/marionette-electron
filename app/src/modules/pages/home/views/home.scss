@@ -2,14 +2,15 @@
 @import "~bootstrap/scss/_variables";
 
 .home {
-  margin-top: 10px;
+  @import "../../../../scss/variables";
 
-  /** Styles **/
-  .jumbotron {
-    background: $gray-dark;
-    color: white;
+  height: 100vh;
+  background: var(--main-content-bg);
 
-    /** Autoprefixer will append prefixes for us to support ie. **/
-    display: flex;
+  #topbar-container {
+	margin: 0;
+	height: var(--topBar-height);
+	background: var(--main-bg-color);
+	box-shadow: var(--default-box-shadow);
   }
 }

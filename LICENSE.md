@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) Vokke <opensource@vokke.com.au> (http://vokke.com.au)
+Copyright (c) Jake Jarrett <jakeryanjarrett@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -1,1 +1,7 @@
-// Define your own variables that you could re-use throughout the application
+* {
+  --main-bg-color: white;
+  --main-content-bg: #eee;
+  --main-outline-color: blue;
+  --default-box-shadow: 2px 2px 4px rgba( 0, 0, 0, 0.1);
+  --topBar-height: 32px;
+}

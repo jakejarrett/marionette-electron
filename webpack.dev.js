@@ -5,7 +5,7 @@ var path = require("path");
 /** Paths **/
 var srcPath = path.resolve(__dirname, "app/src");
 var nodeModulesPath = path.resolve(__dirname, "node_modules");
-var buildPath = path.resolve(__dirname, "app", "assets/js/build");
+var buildPath = path.resolve(__dirname, "app");
 
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
@@ -24,8 +24,10 @@ var config = {
     output: {
         path: buildPath,
         filename: "[name].js",
-        publicPath: "assets/js/build/"
+        publicPath: "/"
     },
+
+	target: "atom",
 
     module: {
 

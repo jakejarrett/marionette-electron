@@ -1,0 +1,133 @@
+:host {
+  @import "../../../../scss/variables";
+
+  section {
+
+	&#top-controls {
+	  width: 100%;
+	  height: var(--topBar-height);
+	}
+
+	&#addition-controls {
+	  position: fixed;
+	  right: 0;
+	  display: flex;
+	  justify-content: flex-end;
+	  align-items: center;
+	  height: var(--topBar-height);
+	  padding-left: 10px;
+
+	  -webkit-app-region: no-drag;
+	}
+
+	&#controls {
+	  position: fixed;
+	  display: flex;
+	  justify-content: flex-start;
+	  align-items: center;
+	  height: var(--topBar-height);
+	  padding-left: 10px;
+
+	  -webkit-app-region: drag;
+	}
+
+	&#title {
+	  position: fixed;
+	  top: 0;
+	  left: auto;
+	  width: 100%;
+	  text-align: center;
+	  height: var(--topBar-height);
+	  overflow: hidden;
+	  -webkit-user-select: none;
+
+	  -webkit-app-region: drag;
+	}
+  }
+
+  div {
+    &#close {
+	  height: 12px;
+	  width: 12px;
+	  background: url(https://cdn.rawgit.com/jakejarrett/vanguard/master/app/resources/themes/yosemite/img/pack/close-normal.svg);
+	  background-size: 12px 12px;
+
+
+	  &:hover {
+		background: url(https://cdn.rawgit.com/jakejarrett/vanguard/master/app/resources/themes/yosemite/img/pack/close-hover.svg);
+		background-size: 12px 12px;
+	  }
+
+	  &:focus {
+		background: url(https://cdn.rawgit.com/jakejarrett/vanguard/master/app/resources/themes/yosemite/img/pack/close-focus.svg);
+		background-size: 12px 12px;
+	  }
+
+	}
+
+	&#minimize {
+	  margin-left: 10px;
+	  height: 12px;
+	  width: 12px;
+	  background: url(https://cdn.rawgit.com/jakejarrett/vanguard/master/app/resources/themes/yosemite/img/pack/min-normal.svg);
+	  background-size: 12px 12px;
+
+	  &:hover {
+		background: url(https://cdn.rawgit.com/jakejarrett/vanguard/master/app/resources/themes/yosemite/img/pack/min-hover.svg);
+		background-size: 12px 12px;
+	  }
+
+	  &:focus {
+		background: url(https://cdn.rawgit.com/jakejarrett/vanguard/master/app/resources/themes/yosemite/img/pack/min-focus.svg);
+		background-size: 12px 12px;
+	  }
+	}
+
+	&#maximize {
+	  margin-left: 10px;
+	  height: 12px;
+	  width: 12px;
+	  background: url(https://cdn.rawgit.com/jakejarrett/vanguard/master/app/resources/themes/yosemite/img/pack/max-normal.svg);
+	  background-size: 12px 12px;
+
+	  &:hover {
+		background: url(https://cdn.rawgit.com/jakejarrett/vanguard/master/app/resources/themes/yosemite/img/pack/max-hover.svg);
+		background-size: 12px 12px;
+	  }
+
+	  &:focus {
+		background: url(https://cdn.rawgit.com/jakejarrett/vanguard/master/app/resources/themes/yosemite/img/pack/max-focus.svg);
+		background-size: 12px 12px;
+	  }
+
+	}
+
+	&.no-drag {
+	  -webkit-app-region: no-drag;
+	}
+  }
+
+  p {
+	&#app-title {
+	  margin: 6px 0;
+	  font-family: sans-serif;
+	  font-weight: 100;
+	  font-size: 0.9rem;
+	}
+  }
+
+  button {
+	&.about {
+	  background: var(--main-bg-color);
+	  border: none;
+	  padding: 5px 10px;
+	  margin-right: 10px;
+	  border-radius: 7px;
+
+	  &:focus {
+		outline-width: 1px;
+		outline-color: var(--main-outline-color);
+	  }
+	}
+  }
+}

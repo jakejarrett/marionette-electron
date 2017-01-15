@@ -98,7 +98,23 @@ App.layoutView.render();
  * @returns {HTMLElement} The navigation region
  * @public
  */
-App.getNavigationContainer = () => App.layoutView.getRegion("navigation");
+App.getSidebarContainer = () => App.layoutView.getRegion("sidebar");
+
+/**
+ * Returns the navigation container
+ *
+ * @returns {HTMLElement} The navigation region
+ * @public
+ */
+App.getPlayerContainer = () => App.layoutView.getRegion("player");
+
+/**
+ * Returns the navigation container
+ *
+ * @returns {HTMLElement} The navigation region
+ * @public
+ */
+App.getTopbarContainer = () => App.layoutView.getRegion("topbar");
 
 /**
  * Returns the content container
@@ -106,7 +122,7 @@ App.getNavigationContainer = () => App.layoutView.getRegion("navigation");
  * @returns {HTMLElement} The content region
  * @public
  */
-App.getContentContainer = () => App.layoutView.getRegion("content");
+App.getContentContainer = () => App.layoutView.getRegion("contentContainer");
 
 /**
  * Notify the application when the page has changed
