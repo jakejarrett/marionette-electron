@@ -4,4 +4,14 @@
   --main-outline-color: blue;
   --default-box-shadow: 2px 2px 4px rgba( 0, 0, 0, 0.1);
   --topBar-height: 32px;
+
+  --sidebar-height: calc(100vh - var(--topBar-height));
+  --sidebar-min-width: 250px;
+  --sidebar-width: var(--sidebar-min-width);
+  --sidebar-top: var(--topBar-height);
+
+  --content-width: calc(100vw - var(--sidebar-width));
+  --content-height: calc(100vh - var(--topBar-height));
+  --content-top: var(--topBar-height);
+  --content-left: var(--sidebar-width);
 }

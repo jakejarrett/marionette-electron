@@ -5,6 +5,7 @@ const Config = require('electron-config');
 
 const App = Electron.app;
 const config = new Config();
+const AppIcon = __dirname + "/assets/img/logo.png";
 
 // adds debug features like hotkeys for triggering dev tools and reload
 require('electron-debug')();
@@ -24,7 +25,8 @@ function createMainWindow() {
 		width: 600,
 		height: 400,
 		frame: false,
-		backgroundColor: '#EEE'
+		backgroundColor: '#EEE',
+		icon: AppIcon
 	});
 
 	win.loadURL(`file://${__dirname}/index.html`);

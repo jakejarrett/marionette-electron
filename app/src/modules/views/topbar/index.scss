@@ -1,0 +1,22 @@
+// Import bootstrap sass variables
+@import "../../../../../node_modules/bootstrap/scss/variables";
+
+:root {
+
+  .topbar {
+	@import "../../../scss/variables";
+
+	#topbar-container {
+	  position: fixed;
+	  top: 0;
+	  margin: 0;
+	  height: var(--topBar-height);
+	  width: 100vw;
+	  background: var(--main-bg-color);
+	  box-shadow: 2px 2px 4px rgba( 0, 0, 0, 0.1);
+	  z-index: 3;
+	}
+  }
+
+
+}

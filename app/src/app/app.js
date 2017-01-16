@@ -5,6 +5,8 @@ import Backbone from "backbone";
 import Marionette, { Application } from "marionette";
 import LayoutView from "./layout_view";
 import ComponentController from "modules/common/controllers/component-controller";
+import TopBarView from "modules/views/topbar";
+import SidebarView from "modules/views/sidebar";
 import Router from "./routes";
 
 /**
@@ -80,6 +82,9 @@ App.on("start", () => {
      * Hide loader
      */
     $(".loader").fadeOut();
+
+	App.getTopbarContainer().show(new TopBarView);
+	App.getSidebarContainer().show(new SidebarView);
 
 });
 

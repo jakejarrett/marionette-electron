@@ -4,13 +4,12 @@
 .home {
   @import "../../../../scss/variables";
 
-  height: 100vh;
+  position: fixed;
+  top: var(--content-top);
+  left: var(--content-left);
+  height: var(--content-height);
+  width: var(--content-width);
   background: var(--main-content-bg);
+  padding: 20px;
 
-  #topbar-container {
-	margin: 0;
-	height: var(--topBar-height);
-	background: var(--main-bg-color);
-	box-shadow: var(--default-box-shadow);
-  }
 }

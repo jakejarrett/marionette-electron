@@ -1,0 +1,22 @@
+// Import bootstrap sass variables
+@import "../../../../../node_modules/bootstrap/scss/variables";
+
+:root {
+  @import "../../../scss/variables";
+
+  .sidebar {
+
+	#sidebar-container {
+	  position: fixed;
+	  top: var(--sidebar-top);
+	  margin: 0;
+	  height: var(--sidebar-height);
+	  width: var(--sidebar-width);
+	  min-width: var(--sidebar-min-width);
+	  background: var(--main-bg-color);
+	  border-right: 1px solid rgba(0, 0, 0, 0.1);
+	}
+  }
+
+
+}

@@ -1,7 +1,6 @@
 import App from "app/app";
 import { View } from "@jakejarrett/marionette-component";
 import {attributes, on} from "marionette-decorators";
-import TopBarControls from "modules/common/components/TopBarControls";
 import Template from "./home.html";
 import "./home.scss";
 
@@ -33,18 +32,11 @@ class HomeView extends View {
         this.setupComponentEventListeners();
     }
 
-    setupComponents () {
-        const componentContainer = this.$el.find("#topbar-container");
+    setupComponents () {}
 
-        this.registerComponent(App.Compontents, "app-controls", TopBarControls, componentContainer, {title: "Home"});
-    }
-
-    setupComponentEventListeners () {
-        // const loginComponent = this.getComponent("login-component").radioChannel;
-    }
+    setupComponentEventListeners () {}
 
     onBeforeDestroy () {
-        this.getComponent("login-component").radioChannel.off("stateChange");
         this.clearComponents();
     }
 
