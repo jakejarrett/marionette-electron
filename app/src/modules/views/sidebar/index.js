@@ -35,7 +35,7 @@ class SidebarView extends View {
 			}
 		];
 
-		this.registerComponent(App.Compontents, "app-controls", Sidebar, this.$el.find("#sidebar-container"), props);
+		this.registerComponent(App.Compontents, "app-sidebar", Sidebar, this.$el.find("#sidebar-container"), props);
     }
 
     onBeforeDestroy () {

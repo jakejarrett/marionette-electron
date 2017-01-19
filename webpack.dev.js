@@ -3,7 +3,8 @@ var Webpack = require("webpack");
 var path = require("path");
 
 /** Paths **/
-var srcPath = path.resolve(__dirname, "app/src");
+var appPath = path.resolve(__dirname, "app");
+var srcPath = path.resolve(appPath, "src");
 var nodeModulesPath = path.resolve(__dirname, "node_modules");
 var buildPath = path.resolve(__dirname, "app");
 

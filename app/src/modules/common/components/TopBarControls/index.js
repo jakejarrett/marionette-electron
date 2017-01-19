@@ -69,7 +69,6 @@ class TopBarControls extends Component {
 	@on("click #maximize")
 	@on("dblclick #top-controls")
 	toggleMaximize (e) {
-		console.log("Hello");
 		if (!this._window.isMaximized()) {
 			this._window.maximize();
 		} else {
@@ -87,7 +86,7 @@ class TopBarControls extends Component {
 			homepage: "https://github.com/jakejarrett/marionette-electron",
 			description: "Starter pack for marionette w/ bleeding edge web standards.",
 			license: "MIT"
-		})
+		});
 	}
 
 	/**
